@@ -5,10 +5,29 @@
   </head>
   <body>
     <nav class="navbar">
-        <h1 class="logo"></h1>
+        <h1 class="logo"></h1><a href="index.html"> Noa Kehle's Website</a>
+           <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
     </nav>
     <main>
         <h1 class="page-title">This is my contact information!</h1>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="2" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
     </main>
     <footer class="footer">© 2023 Noa Kehle's Personal Website | All Rights Reserved</footer>
   </body>
