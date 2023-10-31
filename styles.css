@@ -9,6 +9,21 @@
     --cg-green: rgb(68, 158, 115);
 
   }
+
+  @font-face {
+    font-family: 'robo-bold';
+    src: url('fonts/robot/static/RobotoMono-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'robo-med';
+    src: url('fonts/robot/static/RobotoMono-Medium.ttf') format('truetype');
+    font-weight: 500; /* Medium weight */
+    font-style: normal;
+  }
+  
   
   html {
     height: 100%;
@@ -58,11 +73,10 @@
     /* border: solid blue; */
   }
   
-
   .navbar a {
     color: var(--cg-white);
-    font-weight: bold;
     margin: 0 12px;
+    font-family: 'robo-med', monospace;
     text-decoration: none;
     letter-spacing: 2px;
     font-family: monospace;
@@ -77,16 +91,7 @@
   .navbar a {
     font-size: 16px; 
   }
-/*
-  .navBar a:hover {
-    color: #F49D37;
-  }
 
-  .navbar a:hover {
-    color: var(--cg-orange);
-    text-decoration: underline;
-  }
-*/
   .navbar a:active {
     color: var(--cg-slate-blue);
   }
@@ -121,7 +126,7 @@
 }
   
   .logo a {
-    font-family: monospace;
+    font-family: 'robo-med';
   }
 
   .logo a:hover {
@@ -201,7 +206,6 @@
     border-top: 2px solid var(--cg-black); /* Adjust color and thickness as needed */
   }
 
-
   .intro-title{
     text-align: center;
     margin-top: 100px;
@@ -224,6 +228,12 @@
     text-align: center;
     margin-bottom: 80px;
   }
+  
+  .education-divider {
+    width: 40%;
+    border-top: 2px solid var(--cg-black);
+    margin: 0 auto; /* Center the element horizontally using margin */
+  }
 
   .coursework {
     font-size: 15px;
@@ -235,9 +245,6 @@
     flex-direction: row;
     max-width: 100%;
     margin: 1em 0 2em 0;
-  
-    /* Debug border */
-    /* border: 2px solid blue; */
   }
   
   .item-link {
