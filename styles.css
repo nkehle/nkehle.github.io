@@ -37,51 +37,17 @@
     z-index: 10;
   
     display: flex;
-    justify-content: space-between;
     align-items: center;
     text-align: center;
+    justify-content: center;
   
     background-color: var(--cg-black);
     color: var(--cg-white);
     padding: 0px 0px;
-    /* Debug border */
-    /* border: solid red; */
   }
+ 
 
-
-  .nav-list {
-    display: flex;
-    flex-direction: row;
-    position: relative; 
-    right: 30px;
-    list-style: none;
-  
-    /* Debug border */
-    /* border: solid blue; */
-  }
-  
-  .navbar a {
-    color: var(--cg-white);
-    margin: 0 12px;
-    text-decoration: none;
-    letter-spacing: 2px;
-    font-family: monospace;
-  }
-
-  .navbar a:nth-child(2) {
-    display: flex;
-    font-size: 20px; 
-    margin-right: 30%;
-  }
-  
-  .navbar a {
-    font-size: 16px; 
-  }
-
-  .navbar a:active {
-    color: var(--cg-slate-blue);
-  }
-  /* Provided styles */
+ 
 .w3rcontainer {
   border: 1px solid #cccfdb;
   border-radius: 2px;
