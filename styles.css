@@ -27,7 +27,6 @@
   }
   
   /* CSS for navigation */
-  
   .navbar {
     position: -webkit-sticky;
     position: sticky;
@@ -45,46 +44,6 @@
     color: var(--cg-white);
     padding: 0px 0px;
   }
- 
-
- 
-.w3rcontainer {
-  border: 1px solid #cccfdb;
-  border-radius: 2px;
-}
-
-.hover-underline-animation {
-  display: inline-block;
-  position: relative;
-  color: #0087ca;
-}
-
-.hover-underline-animation:after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: var(--cg-grey);
-  transform-origin: bottom right;
-  transition: transform 0.35s ease-out;
-}
-
-.hover-underline-animation:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-  
-  .logo a {
-    /* font-family: 'Roboto Mono', monospace; */
-  }
-
-  .logo a:hover {
-    text-decoration: None;
-  }
-
 
   main {
     padding: 0 20px 40px 20px;
@@ -97,7 +56,6 @@
   .page-title {
     display: flex;
     justify-content: center;
-    font-size: 50px;
     font-family: 'Roboto Mono', monospace; 
    }
 
@@ -106,14 +64,13 @@
     align-items: center;
 }
 
-.profile-pic {
-  width: 250px; /* Adjust the width to make the picture larger */
-  height: 300px; /* Adjust the height to maintain the aspect ratio */
-  margin: 0 auto;
-  display: flex;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-}
-
+  .profile-pic {
+    width: 250px; /* Adjust the width to make the picture larger */
+    height: 300px; /* Adjust the height to maintain the aspect ratio */
+    margin: 0 auto;
+    display: flex;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  }
 
   .profile-links {
     display: flex;
@@ -169,6 +126,19 @@
     font-size: 18px;
   }
 
+  .location-container {
+    display: flex;
+    align-items: center;
+}
+
+.location {
+    width: 30px;
+    height: 30px;
+}
+
+.seattle {
+    margin-left: 10px; /* Add margin or padding for spacing as needed */
+}
   .campus-pic{
     margin-top: 100px;
     width: 120%;
@@ -192,108 +162,72 @@
   }
   /* CSS for portfolio grid */
   
+
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5%;
+    margin-bottom: 150px;
+}
+
   .project {
+      border: 2px solid black;
+      padding: 10px;
+      text-align: center;
+      max-width: 100%;
+  }
+
+  .project img {
+      max-width: 100%;
+      height: auto;
+  }
+
+  /* CSS for footer */
+  
+  .footer {
     display: flex;
-    flex-direction: row;
-    max-width: 100%;
-    margin: 1em 0 2em 0;
-  }
-  
-  .item-link {
-    width: 70%;
-  
-    /* Debug border */
-    /* border: 2px solid red; */
-  }
-  
-  .project-image {
-    object-fit: cover;
-    width: 100%;
-    height: 500px;
-    flex-basis: 50px;
-    flex-grow: 2;
-  
-    /* Debug border */
-    /* border: 2px solid black; */
-  }
-  
-  .project-details {
-    display: flex;
-    background-color: var(--cg-white);
-    width: 50%;
-    height: 500px;
-    flex-shrink: 1;
-    padding: 0 20px;
-    margin: 0px;
-    line-height: 1.5;
-    overflow: scroll;
-  
-    flex-direction: column;
-    text-align: center;
     justify-content: center;
-  
-    /* Debug border */
-    /* border: 2px solid green; */
-  }
-  
-  .project-details a {
-    color: var(--cg-black);
-    text-decoration: none;
-    font-weight: bold;
-    letter-spacing: 1px;
-  }
-  
-  .project-details a:hover {
-    color: var(--cg-blue);
-    text-decoration: underline;
-  }
-  
-  .project-details {
-    font-weight: lighter;
-  }
-  
-  .project-name {
-    font-weight: bold;
-    font-size: 20px;
-  }
-  
-  /* CSS for home page */
-  
-  .about {
-    display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #f8f8f8;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    background-color: var(--cg-black);
+    color: var(--cg-white);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+  }
+
+  /* .w3rcontainer {
+    border: 1px solid #cccfdb;
+    border-radius: 2px;
   }
   
-  .about-image img {
-    max-width: 300px;
-    border-radius: 5px;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+  .hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
   }
   
-  .about-text {
-    flex: 1;
-    margin-left: 20px;
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--cg-grey);
+    transform-origin: bottom right;
+    transition: transform 0.35s ease-out;
   }
   
-  .about-text h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  } */
+
+  /* * CSS for contact form */
   
-  .about-text p {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  
-  /* CSS for contact form */
-  
-  label {
+  /* label {
     display: block;
     margin-bottom: 8px;
     font-family: Roboto Mono, monospace;
@@ -316,21 +250,7 @@
     font-size: 38px;
   }
   /* Add some spacing to the form */
-  form {
+  /* form {
     width: 500px;
     margin: 0 auto;
-  }
-  
-  /* CSS for footer */
-  
-  .footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--cg-black);
-    color: var(--cg-white);
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 2.5rem;
-  }
+  } */
