@@ -77,18 +77,7 @@
 
   }
 
-.profile-pic::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 75%; 
-}
-
 /* You can adjust the gradient colors and transparency as needed. */
-
-
 
   .profile-links {
     display: flex;
@@ -103,7 +92,7 @@
     justify-content: center;
 }
 
-.link-container a {
+  .link-container a {
     outline: 0;
     border: 0;
     font-weight: 600;
@@ -121,16 +110,16 @@
     align-items: center;
     justify-content: center;
     line-height: 1;
-}
+  }
 
-.link-container:active {
+  .link-container:active {
     position: relative;
     top: -5px; 
-}
+  }
 
-.link-container a:hover {
+  .link-container a:hover {
     box-shadow: 0 8px 22px 0 rgb(37 44 97 / 15%), 0 4px 6px 0 rgb(93 100 148 / 20%);
-}
+  }
 
   .divider {
     width: 40%;
