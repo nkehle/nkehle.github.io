@@ -3,7 +3,6 @@
     --cg-black: rgb(30, 32, 32);
     --cg-blue: rgb(36, 94, 255);
     --cg-grey: rgb(230, 230, 230); /* --cg-grey: rgb(243, 243, 243); */
-
     --cg-white: rgb(255, 255, 255);
     --cg-slate-blue: rgba(31, 91, 119, 0.738);
     --cg-green: rgb(68, 158, 115);
@@ -65,12 +64,31 @@
 }
 
   .profile-pic {
-    width: 250px; /* Adjust the width to make the picture larger */
-    height: 300px; /* Adjust the height to maintain the aspect ratio */
     margin: 0 auto;
     display: flex;
+    width: 100%; /* Ensure the container takes the full width */
+    max-width: 75%; /* Limit the width of the left side to 75% */
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
   }
+
+  .profile-pic img {
+    width: 100%; /* Ensure the image takes the full width of the container */
+    height: auto;
+
+  }
+
+.profile-pic::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 75%; 
+}
+
+/* You can adjust the gradient colors and transparency as needed. */
+
+
 
   .profile-links {
     display: flex;
@@ -78,17 +96,18 @@
   }
 
   .link-container {
-    margin-left: 150px;
-    margin-bottom: 20px;
-    cursor: pointer;
-    display: inline-block;
-  }
+    margin-bottom: 30px; /* Add some margin to separate the containers vertically */
+    transition: all 0.2s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-  .link-container a {
+.link-container a {
     outline: 0;
     border: 0;
     font-weight: 600;
-    color: var(--cg-slate-blue);
+    color: black;
     font-size: 16px;
     text-align: center;
     height: 38px;
@@ -98,17 +117,20 @@
     box-shadow: 0 4px 11px 0 rgb(37 44 97 / 15%), 0 1px 3px 0 rgb(93 100 148 / 20%);
     transition: all 0.2s ease-out;
     text-decoration: none;
-    display: block;
-  }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
 
-  .link-container a:hover {
+.link-container:active {
+    position: relative;
+    top: -5px; 
+}
+
+.link-container a:hover {
     box-shadow: 0 8px 22px 0 rgb(37 44 97 / 15%), 0 4px 6px 0 rgb(93 100 148 / 20%);
-  }
-
-  .link-container a:active {
-    margin-bottom: 30px;
-    color: var(--cg-slate-blue);
-  }
+}
 
   .divider {
     width: 40%;
@@ -137,12 +159,12 @@
 }
 
 .seattle {
-    margin-left: 10px; /* Add margin or padding for spacing as needed */
+    margin-left: 10px; 
 }
   .campus-pic{
     margin-top: 100px;
     width: 120%;
-    max-width: 800px; /* Set a maximum width for the image */
+    max-width: 800px; 
     height: 1%;
   }
 
@@ -154,14 +176,13 @@
   .education-divider {
     width: 40%;
     border-top: 2px solid var(--cg-black);
-    margin: 0 auto; /* Center the element horizontally using margin */
+    margin: 0 auto;
   }
 
   .coursework {
     font-size: 15px;
   }
   /* CSS for portfolio grid */
-  
 
   .projects {
     display: grid;
