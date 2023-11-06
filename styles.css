@@ -89,18 +89,16 @@
     align-items: center;
 }
 
-  .profile-pic {
+  .portrait-image {
+    display: block;
     margin: 0 auto;
-    display: flex;
-    width: 100%; /* Ensure the container takes the full width */
-    max-width: 75%; /* Limit the width of the left side to 75% */
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    max-width: 70%; /* Set the image to take roughly half the page */
+    width: auto;
+    height: auto;
+    max-height: 50vh; /* Limit image height to half the viewport height */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Shadow effect */
   }
 
-  .profile-pic img {
-    width: 100%; /* Ensure the image takes the full width of the container */
-    height: auto;
-  }
 
 /* You can adjust the gradient colors and transparency as needed. */
 
