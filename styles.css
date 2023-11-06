@@ -158,7 +158,7 @@
   .resume a{
     margin-top:20px;
     text-decoration: none; 
-    background-color: #333; 
+    background-color: var(--cg-black); 
     color: #fff; 
     padding: 5px 5px; 
     border-radius: 5px;  
@@ -171,24 +171,61 @@
     background-color: #555; 
   }
   
+  .education {
+    margin-top: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 80px;
+    margin-bottom: 200px;
+}
 
-  .campus-pic{
-    margin-top: 300px;
+  .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
-    max-width: 800px; 
-    height: 1%;
   }
 
+  .education-info {
+      flex: 1;
+      padding-right: 20px; /* Adjust the spacing between text and image */
+  }
+
+  .campus-pic {
+      flex: 1; 
+      margin-left: 40px; 
+      margin-bottom: 100px;
+      margin-right: 40px;
+  }
+
+
+   .cp{
+    width: 100%; 
+    max-width: 500px; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+    margin-left: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+
+  }
+
+  /*
   .education {
     text-align: center;
     margin-bottom: 80px;
+    align-items: center;
   }
   
   .education-divider {
     width: 40%;
     border-top: 2px solid var(--cg-black);
     margin: 0 auto;
-  }
+  } */
 
   .coursework {
     font-size: 16px;
@@ -198,6 +235,7 @@
   /* CSS for portfolio grid */
 
   .projects {
+    margin-top: ;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5%;
@@ -225,7 +263,7 @@
 
   .project-link a {
     text-decoration: none; /* Remove the underline */
-    background-color: #333; /* Set the background color of the button */
+    background-color: var(--cg-black); 
     color: #fff; /* Set the text color of the button to white */
     padding: 5px 10px; /* Add padding to the button for spacing */
     border-radius: 5px; /* Add rounded corners to the button */
@@ -250,7 +288,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    font-size: 13px;
     background-color: var(--cg-black);
     color: var(--cg-white);
     position: absolute;
