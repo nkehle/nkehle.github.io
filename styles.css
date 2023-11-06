@@ -42,6 +42,7 @@
     margin-bottom: 40px;
   }
   
+
   .logo {
     height: 60px;
     width: 90px;
@@ -85,18 +86,19 @@
    }
 
   .profile-section {
+    margin-top: 120px;
     display: flex;
     align-items: center;
 }
 
   .portrait-image {
-    display: block;
-    margin: 0 auto;
-    max-width: 70%; /* Set the image to take roughly half the page */
-    width: auto;
-    height: auto;
-    max-height: 50vh; /* Limit image height to half the viewport height */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    width: 100%; /* Adjust the width as needed */
+    max-width: 600px; /* Set a maximum width to control image size */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any extra spacing or margins */
+    margin: 0 auto; /* Center the image horizontally */
+    margin-left: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
   }
 
 
@@ -113,45 +115,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-  .link-container a {
-    outline: 0;
-    border: 0;
-    font-weight: 600;
-    color: black;
-    font-size: 16px;
-    text-align: center;
-    height: 38px;
-    padding: 8px 24px;
-    border-radius: 50px;
-    background-image: linear-gradient(180deg, #fff, #f5f5fa);
-    box-shadow: 0 4px 11px 0 rgb(37 44 97 / 15%), 0 1px 3px 0 rgb(93 100 148 / 20%);
-    transition: all 0.2s ease-out;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 1;
   }
-
-  .link-container:active {
-    position: relative;
-    top: -5px; 
-  }
-
-  .link-container a:hover {
-    box-shadow: 0 8px 22px 0 rgb(37 44 97 / 15%), 0 4px 6px 0 rgb(93 100 148 / 20%);
-  }
-
-  .divider {
-    width: 40%;
-    border-top: 2px solid var(--cg-black); /* Adjust color and thickness as needed */
+  .location{
+    margin-top: 1px;
   }
 
   .intro-title{
     text-align: center;
-    margin-top: 100px;
+  }
+
+  .profile-info {
+    margin-left: 40px;
+    text-align: center; /* Center the text content horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the entire content vertically */
+    justify-content: center; /* Center the entire content horizontally */
   }
 
   .intro{
@@ -161,20 +140,40 @@
   }
 
   .location-container {
+    text-align: center;
     display: flex;
-    align-items: center;
-}
+    margin-top: 5px;
+  }
 
-.location {
-    width: 30px;
-    height: 30px;
-}
+  .seattle {
+    margin-left: 10px;
+    margin-top: 7px; 
+  }
 
-.seattle {
-    margin-left: 10px; 
-}
+  .location {
+      width: 30px;
+      height: 30px;
+  }
+
+  .resume a{
+    margin-top:20px;
+    text-decoration: none; 
+    background-color: #333; 
+    color: #fff; 
+    padding: 5px 5px; 
+    border-radius: 5px;  
+    display: inline-block; 
+    transition: background-color 0.3s;
+  
+  }
+  
+  .resume a:hover {
+    background-color: #555; 
+  }
+  
+
   .campus-pic{
-    margin-top: 100px;
+    margin-top: 300px;
     width: 100%;
     max-width: 800px; 
     height: 1%;
@@ -193,6 +192,8 @@
 
   .coursework {
     font-size: 16px;
+    margin-bottom: 200px;
+
   }
   /* CSS for portfolio grid */
 
