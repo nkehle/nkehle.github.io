@@ -199,7 +199,7 @@
       flex: 1; 
       margin-left: 40px; 
       margin-bottom: 100px;
-      margin-right: 40px;
+      margin-right: 40px;/pictures/Calpoly.jpeg
   }
 
 
@@ -214,18 +214,6 @@
 
   }
 
-  /*
-  .education {
-    text-align: center;
-    margin-bottom: 80px;
-    align-items: center;
-  }
-  
-  .education-divider {
-    width: 40%;
-    border-top: 2px solid var(--cg-black);
-    margin: 0 auto;
-  } */
 
   .coursework {
     font-size: 16px;
