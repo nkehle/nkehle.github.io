@@ -133,6 +133,7 @@
     justify-content: center; /* Center the entire content horizontally */
   }
 
+
   .intro{
     text-align: center;
     margin-top: 20px;
@@ -194,6 +195,14 @@
       flex: 1;
       padding-right: 20px; /* Adjust the spacing between text and image */
   }
+
+  .education-divider {
+    width: 50%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the divider horizontally */
+    border-top: 2px solid #000; /* Add a border for styling */
+    margin-top: 10px; /* Adjust the margin-top as needed */
+    margin-bottom: 20px; /* Adjust the margin-bottom as needed */
+}
 
   .campus-pic {
       flex: 1; 
